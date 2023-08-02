@@ -1,0 +1,6 @@
+{
+  "BsNewAuth": "true",
+  "JSESSIONID": "EE15043207A1AE1BD30F25F2B99F143A",
+  "muc_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjkyNjEwMjI1LCJpYXQiOjE2OTA4ODIyMjUsImluZm8iOiJ7XCJyZXF1ZXN0SWRcIjpcIm11Y18yeWJrZzloamFtM3ppbXFuM3NcIixcImxvZ2luVGltZVwiOjE2OTA4ODIyMjUyNjMsXCJyZWZyZXNoVGltZVwiOjE2OTA4ODIyMjUyNjMsXCJwdWlkXCI6Mjc5NTkwLFwicmVxdWVzdElwXCI6XCIyMDMuMjA1LjE0MS4xMTdcIixcInJlcXVlc3RDbGllbnRcIjpcIkRldmljZTpVbmtub3dufFN5c3RlbTpVbmtub3duLFVua25vd258Q2xpZW50OnB5dGhvbi1yZXF1ZXN0cywwXCIsXCJ1aWRcIjoyNzk1OTB9In0.PaNN7q7IRFw0_ORcWY9hQ50WvZSxde_IoMp8P6ovKvA",
+  "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE": "zh-CN"
+}

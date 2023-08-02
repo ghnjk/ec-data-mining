@@ -1,0 +1,21 @@
+label: 草坪
+matches:grass|lawn
+
+label: 仿真装饰
+matches: leaf|leaves|flower|thatch|plant|fence|fruits|vegetables
+
+label: 室内装饰
+matches: birthday decoration|cherry blossom branch|hook|christmas|party decoration|party needs|yard decoration
+
+
+label: 宠物用品
+matches: feeder|pet|cat toilet|cat|dog
+
+label: 运动用品
+matches: basketball|ball|spot|badminton
+
+label: 摩托车配件
+matches: motorcycle|car air freshener
+
+label: 手机配件
+matches: phone holder|phone

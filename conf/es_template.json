@@ -1,0 +1,82 @@
+{
+  "ec_db_template" : {
+    "order" : 0,
+    "index_patterns" : [
+      "ec_analysis_*"
+    ],
+    "settings" : {
+      "index" : {
+        "refresh_interval" : "1s",
+        "number_of_shards" : "32",
+        "priority" : "1000",
+        "number_of_replicas" : "1"
+      }
+    },
+    "mappings" : {
+      "_source" : {
+        "enabled" : true
+      },
+      "properties" : {
+        "saleAmount" : {
+          "type" : "long"
+        },
+        "cancelsAmount" : {
+          "type" : "long"
+        },
+        "efficientsAmount" : {
+          "type" : "long"
+        },
+        "shopGroup" : {
+          "type" : "keyword"
+        },
+        "skuGroup" : {
+          "type" : "keyword"
+        },
+        "docId" : {
+          "type" : "keyword"
+        },
+        "shopOwner" : {
+          "type" : "keyword"
+        },
+        "cancelsOrders" : {
+          "type" : "long"
+        },
+        "shopName" : {
+          "type" : "keyword"
+        },
+        "refundsOrders" : {
+          "type" : "long"
+        },
+        "productName" : {
+          "type" : "keyword"
+        },
+        "platform" : {
+          "type" : "keyword"
+        },
+        "ordersNum" : {
+          "type" : "long"
+        },
+        "efficientsOrders" : {
+          "type" : "long"
+        },
+        "time" : {
+          "format" : "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis",
+          "type" : "date"
+        },
+        "shopId" : {
+          "type" : "keyword"
+        },
+        "sku" : {
+          "type" : "keyword"
+        },
+        "skuId" : {
+          "type" : "keyword"
+        },
+        "refundAmount" : {
+          "type" : "long"
+        }
+      }
+    },
+    "aliases" : { }
+  }
+}
