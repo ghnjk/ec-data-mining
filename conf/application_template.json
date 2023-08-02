@@ -1,0 +1,8 @@
+{
+  "ydm_token": "xxxxxxx",
+  "big_seller_mail": "xxxx@qq.com",
+  "big_seller_encoded_passwd": "xx",
+  "es_hosts": ["http://x.x.x.x:9200"],
+  "es_user": "elastic",
+  "es_passwd": "xxx"
+}
