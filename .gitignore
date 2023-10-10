@@ -2,10 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+all_shops.xlsx
 # C extensions
 *.so
-
+*.cookies.*.json
 # Distribution / packaging
 .Python
 build/

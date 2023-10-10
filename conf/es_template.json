@@ -78,5 +78,70 @@
       }
     },
     "aliases" : { }
+  },
+  "ec_ads_template": {
+    "order": 0,
+    "index_patterns": [
+      "ec_ads_*"
+    ],
+    "settings": {
+      "index": {
+        "refresh_interval": "1s",
+        "number_of_shards": "32",
+        "priority": "1000",
+        "number_of_replicas": "1"
+      }
+    },
+    "mappings": {
+      "_source": {
+        "enabled": true
+      },
+      "properties": {
+        "time": {
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis",
+          "type": "date"
+        },
+        "shopGroup" : {
+          "type" : "keyword"
+        },
+        "docId" : {
+          "type" : "keyword"
+        },
+        "shopOwner" : {
+          "type" : "keyword"
+        },
+        "shopName" : {
+          "type" : "keyword"
+        },
+        "platform" : {
+          "type" : "keyword"
+        },
+        "gmv": {
+          "type": "float"
+        },
+        "guideGmv": {
+          "type": "float"
+        },
+        "adsSpend": {
+          "type": "float"
+        },
+        "impressions": {
+          "type": "long"
+        },
+        "reachUV": {
+          "type": "long"
+        },
+        "orders": {
+          "type": "long"
+        },
+        "visits": {
+          "type": "long"
+        },
+        "uniqueVisitors": {
+          "type": "long"
+        }
+      }
+    },
+    "aliases": {}
   }
 }

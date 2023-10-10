@@ -14,6 +14,8 @@ class ShopManager(object):
         self.__load_shop_info(shop_info_file)
 
     def get_shop_owner(self, shop_name: str):
+        if shop_name not in self.shops.keys():
+            print(f"UNKNOWN SHOP {shop_name}")
         return self.shops.get(shop_name, "UNKNOWN")
 
     def __load_shop_info(self, shop_info_file: str):

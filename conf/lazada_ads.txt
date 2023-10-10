@@ -1,0 +1,638 @@
+56.11k  4.71 14k
+32.95k 6.58 10.39
+
+89.05  5.4 25
+
+
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.92/mac-arm64/chrome-mac-arm64.zip
+
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.92/mac-arm64/chromedriver-mac-arm64.zip
+
+
+lazada登陆
+
+
+
+
+https://sellercenter.lazada.com.ph/sponsor/solutions/data/product/storewide/overview.json?startDate=20230901&endDate=20230902
+{
+    "success": true,
+    "msg": "",
+    "result": {
+        "gmv": 65629, // 店铺GMV (菲律宾比索)
+        "guideGmv": 45663, // 广告带来的GMV (菲律宾比索)
+        "spend": 6787, // 广告 花费 (菲律宾比索)
+        "roi": 6.73,
+        "gmvPastDays": -57.96,
+        "guideGmvPastDays": 20.24,
+        "spendPastDays": 8.81,
+        "roiPastDays": 10.51
+    },
+    "resultCode": 1
+}
+
+
+// 全效宝
+
+明细
+https://sellercenter.lazada.com.ph/sponsor/solutions/performance/report/campaign.json?sort=&order=&pageNo=1&pageSize=20&productType=&campaignType=&campaignName=&useRtTable=0&startDate=2023-09-01&endDate=2023-09-02
+{
+    "success": true,
+    "msg": "",
+    "result": {
+        "reportHeader": [
+            {
+                "featureKey": "campaignName",
+                "featureName": "Campaign",
+                "displayType": "string",
+                "width": null,
+                "sortable": false,
+                "medusaKey": null,
+                "dragged": false,
+                "download": true
+            },
+            {
+                "featureKey": "dayBudget",
+                "featureName": "Day Budget",
+                "displayType": "string",
+                "width": null,
+                "sortable": false,
+                "medusaKey": null,
+                "dragged": false,
+                "download": true
+            },
+            {
+                "featureKey": "spend",
+                "featureName": "Spend",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeRoi",
+                "featureName": "Store ROI",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "clicks",
+                "featureName": "Clicks",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "impressions",
+                "featureName": "Impressions",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "ctr",
+                "featureName": "CTR",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "cpc",
+                "featureName": "CPC",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeRevenue",
+                "featureName": "Store Revenue",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeUnitSold",
+                "featureName": "Store Unit Sold",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeA2c",
+                "featureName": "Store A2C",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeOrders",
+                "featureName": "Store Orders",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "storeCvr",
+                "featureName": "Store CVR",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productA2c",
+                "featureName": "Product A2C",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productOrders",
+                "featureName": "Product Orders",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productCvr",
+                "featureName": "Product CVR",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productUnitSold",
+                "featureName": "Product Unit Sold",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productRevenue",
+                "featureName": "Product Revenue",
+                "displayType": "string",
+                "width": null,
+                "sortable": true,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "campaignObjective",
+                "featureName": "Objective",
+                "displayType": "string",
+                "width": null,
+                "sortable": false,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "productType",
+                "featureName": "Placement",
+                "displayType": "string",
+                "width": null,
+                "sortable": false,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            },
+            {
+                "featureKey": "campaignType",
+                "featureName": "Campaign Type",
+                "displayType": "string",
+                "width": null,
+                "sortable": false,
+                "medusaKey": null,
+                "dragged": true,
+                "download": true
+            }
+        ],
+        "reportItem": [
+            {
+                "campaignId": 101100015400317,
+                "campaignName": "草地",
+                "dayBudget": 1500.00,
+                "spend": 3941.12,
+                "storeRoi": 4.93,
+                "clicks": 885,
+                "impressions": 27634,
+                "ctr": 3.2000,
+                "cpc": 4.45,
+                "storeRevenue": 19420.77,
+                "storeUnitSold": 50,
+                "storeA2c": 132,
+                "storeOrders": 20,
+                "storeCvr": 0.0226,
+                "productA2c": 116.00,
+                "productOrders": 20,
+                "productCvr": 0.0226,
+                "productUnitSold": 25,
+                "productRevenue": 19412.85,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 2
+            },
+            {
+                "campaignId": 101100019468189,
+                "campaignName": "植物叶子",
+                "dayBudget": 244.00,
+                "spend": 402.49,
+                "storeRoi": 6.31,
+                "clicks": 119,
+                "impressions": 3974,
+                "ctr": 2.9900,
+                "cpc": 3.38,
+                "storeRevenue": 2538.62,
+                "storeUnitSold": 14,
+                "storeA2c": 20,
+                "storeOrders": 3,
+                "storeCvr": 0.0252,
+                "productA2c": 18.00,
+                "productOrders": 3,
+                "productCvr": 0.0252,
+                "productUnitSold": 14,
+                "productRevenue": 2538.62,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 2
+            },
+            {
+                "campaignId": 101100012890362,
+                "campaignName": "测试广告词（有出单的链接）",
+                "dayBudget": 68.00,
+                "spend": 134.84,
+                "storeRoi": 7.16,
+                "clicks": 88,
+                "impressions": 1584,
+                "ctr": 5.5600,
+                "cpc": 1.53,
+                "storeRevenue": 964.87,
+                "storeUnitSold": 3,
+                "storeA2c": 25,
+                "storeOrders": 3,
+                "storeCvr": 0.0341,
+                "productA2c": 23.00,
+                "productOrders": 3,
+                "productCvr": 0.0341,
+                "productUnitSold": 3,
+                "productRevenue": 964.87,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 1
+            },
+            {
+                "campaignId": 101100014662201,
+                "campaignName": "4.13新测试链接(变形金刚等链接)",
+                "dayBudget": 50.00,
+                "spend": 45.64,
+                "storeRoi": 23.85,
+                "clicks": 46,
+                "impressions": 1080,
+                "ctr": 4.2600,
+                "cpc": 0.99,
+                "storeRevenue": 1088.57,
+                "storeUnitSold": 3,
+                "storeA2c": 6,
+                "storeOrders": 3,
+                "storeCvr": 0.0652,
+                "productA2c": 5.00,
+                "productOrders": 3,
+                "productCvr": 0.0652,
+                "productUnitSold": 3,
+                "productRevenue": 1088.57,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 1
+            },
+            {
+                "campaignId": 101100023408135,
+                "campaignName": "樱花藤条",
+                "dayBudget": 50.00,
+                "spend": 46.38,
+                "storeRoi": 13.61,
+                "clicks": 46,
+                "impressions": 960,
+                "ctr": 4.7900,
+                "cpc": 1.01,
+                "storeRevenue": 631.40,
+                "storeUnitSold": 20,
+                "storeA2c": 22,
+                "storeOrders": 1,
+                "storeCvr": 0.0217,
+                "productA2c": 21.00,
+                "productOrders": 1,
+                "productCvr": 0.0217,
+                "productUnitSold": 10,
+                "productRevenue": 618.06,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 2
+            },
+            {
+                "campaignId": 101100026172112,
+                "campaignName": "篮球框",
+                "dayBudget": 150.00,
+                "spend": 205.87,
+                "storeRoi": 7.22,
+                "clicks": 112,
+                "impressions": 560,
+                "ctr": 20.0000,
+                "cpc": 1.84,
+                "storeRevenue": 1487.07,
+                "storeUnitSold": 3,
+                "storeA2c": 13,
+                "storeOrders": 3,
+                "storeCvr": 0.0268,
+                "productA2c": 13.00,
+                "productOrders": 3,
+                "productCvr": 0.0268,
+                "productUnitSold": 3,
+                "productRevenue": 1487.07,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 2
+            },
+            {
+                "campaignId": 101100020662127,
+                "campaignName": "1m草地",
+                "dayBudget": 200.00,
+                "spend": 22.78,
+                "storeRoi": 0.00,
+                "clicks": 5,
+                "impressions": 51,
+                "ctr": 9.8000,
+                "cpc": 4.56,
+                "storeRevenue": 0.00,
+                "storeUnitSold": 0,
+                "storeA2c": 1,
+                "storeOrders": 0,
+                "storeCvr": 0.0000,
+                "productA2c": 1.00,
+                "productOrders": 0,
+                "productCvr": 0.0000,
+                "productUnitSold": 0,
+                "productRevenue": 0.00,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 1
+            },
+            {
+                "campaignId": 101100026726093,
+                "campaignName": "PH 8.8 2023",
+                "dayBudget": 11712.00,
+                "spend": 0.00,
+                "storeRoi": 0,
+                "clicks": 0,
+                "impressions": 6,
+                "ctr": 0.0000,
+                "cpc": 0,
+                "storeRevenue": 0.00,
+                "storeUnitSold": 0,
+                "storeA2c": 0,
+                "storeOrders": 0,
+                "storeCvr": 0,
+                "productA2c": 0.00,
+                "productOrders": 0,
+                "productCvr": 0,
+                "productUnitSold": 0,
+                "productRevenue": 0.00,
+                "campaignObjective": 2,
+                "productType": "ALL",
+                "campaignType": 2
+            }
+        ],
+        "pageSize": 20,
+        "total": 8
+    },
+    "resultCode": 1
+}
+
+汇总信息
+https://sellercenter.lazada.com.ph/sponsor/solutions/performance/report/overview.json?useRtTable=0&startDate=2023-09-01&endDate=2023-09-01&lastStartDate=2023-08-31&lastEndDate=2023-08-31
+{
+    "success": true,
+    "msg": "",
+    "result": {
+        "reportOverview": {
+            "spend": 4799.12, // 广告花费
+            "impressions": 35849, // 曝光数
+            "clicks": 1301, // 点击量
+            "ctr": "3.63", // 点击率
+            "unitsSold": 93, // 店铺销售件数
+            "revenue": 26131.30, // 店铺收入
+            "productRevenue": 26110.04, //
+            "cpc": 3.69, // 单个点击成本
+            "roi": 5.45 // 投入产出比
+        },
+        "lastReportOverview": {
+            "spend": 4680.93,
+            "impressions": 32754,
+            "clicks": 1263,
+            "ctr": "3.86",
+            "unitsSold": 118,
+            "revenue": 24177.93,
+            "productRevenue": 21321.99,
+            "cpc": 3.71,
+            "roi": 5.17
+        }
+    },
+    "resultCode": 1
+}
+
+
+// 超级联盟
+https://sellercenter.lazada.com.ph/sponsor/solutions/affiliate/report/metric/overview.json?startDateStr=2023-09-01&endDateStr=2023-09-02&dateType=7
+{
+    "module": {
+        "mktSpend": {
+            "cycleCrc": 0.2766,
+            "value": 1987.51, // 广告费
+            "preValue": 1556.93
+        },
+        "mktRevenue": {
+            "cycleCrc": 0.0798,
+            "value": 20530.26, // 收入
+            "preValue": 19012.64
+        },
+        "mktOrders": {
+            "cycleCrc": -0.0588,
+            "value": 16.0,   // 订单数
+            "preValue": 17.0
+        },
+        "mktUnitsSold": {
+            "cycleCrc": 0.4722,
+            "value": 53.0, // 销售件数
+            "preValue": 36.0
+        },
+        "mktRoi": {
+            "cycleCrc": -0.154,
+            "value": 10.33, // 投入产出比
+            "preValue": 12.21
+        }
+    },
+    "success": true,
+    "errorCode": null,
+    "retry": false,
+    "repeated": false
+}
+https://sellercenter.lazada.com.ph/sponsor/solutions/affiliate/report/performance.json?searchStr=&startDateStr=2023-09-26&endDateStr=2023-10-02&brandId=-1&categoryId=-1&pageNo=1&pageSize=8&type=1
+{
+    "success": true,
+    "errorCode": null,
+    "totalCount": 11,
+    "pageNo": 1,
+    "pageSize": 8,
+    "modelList": [
+        {
+            "itemId": 2909197160,
+            "brandId": null,
+            "productName": "Grass DIY Backdrop Panels Fence Home Garden Outdoor UV Protected Artificial Turf Green Carpet Wall Lawn Artificial Plant",
+            "categoryId": null,
+            "link": "",
+            "image": "https://sg-live-01.slatic.net/p/1d5d2522c4e662833b54d614d7437e1c.png",
+            "mktSpend": 5352.44,
+            "mktRevenue": 54486.53,
+            "mktOrders": 46.0,
+            "mktUnitsSold": 55.0,
+            "mktRoi": 10.18
+        },
+        {
+            "itemId": 2916119210,
+            "brandId": null,
+            "productName": "Patrol birthday balloon set Patrol CHASE Balloon Theme Birthday boy Skye Balloon theme birthday girl decoration set Paw balloons individually packed per set sold by CL party needs",
+            "categoryId": null,
+            "link": "",
+            "image": "https://sg-live-01.slatic.net/p/cc3e69d4212bc2508d178741f819aa7d.jpg",
+            "mktSpend": 24.17,
+            "mktRevenue": 348.34,
+            "mktOrders": 1.0,
+            "mktUnitsSold": 1.0,
+            "mktRoi": 14.41
+        },
+        {
+            "itemId": 3184018354,
+            "brandId": null,
+            "productName": "12pcs Fake Vines Fake Ivy Leaves Artificial Ivy, Ivy Garland Greenery Vines for Bedroom Decor Aesthetic Silk Ivy Vines for Room Wall Decor",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/d43e78c636749a1ecb4667c29915f5a5.jpg",
+            "mktSpend": 95.34,
+            "mktRevenue": 1477.65,
+            "mktOrders": 44.0,
+            "mktUnitsSold": 60.0,
+            "mktRoi": 15.5
+        },
+        {
+            "itemId": 3411358258,
+            "brandId": null,
+            "productName": "A whole volume 25mX1m Artificial Model Grass Meadow Turf Mat Layout Flooring Carpet Wedding arrangement, school, flower arrangement, amusement park-DIY FIT",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/2fb17efe63544a1ecc04f45bcd3cffe1.jpg",
+            "mktSpend": 69.18,
+            "mktRevenue": 750.98,
+            "mktOrders": 1.0,
+            "mktUnitsSold": 1.0,
+            "mktRoi": 10.86
+        },
+        {
+            "itemId": 3429605385,
+            "brandId": null,
+            "productName": "Buy 1 Take 1 Flower vine 45 Heads Artificial Flower Rattan Artificial rattan 2.3M Fake Silk Rose/Cherry blossom Flower Vine Ivy Flower Artificial Flower Holiday Wedding Home Decoration Garden Floral Wreath Rattan(Send Grape leaves a strip)",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/35bb1a315b3e8a953f00d637a849bf02.jpg",
+            "mktSpend": 120.85,
+            "mktRevenue": 1497.35,
+            "mktOrders": 5.0,
+            "mktUnitsSold": 17.0,
+            "mktRoi": 12.39
+        },
+        {
+            "itemId": 3510508170,
+            "brandId": null,
+            "productName": "【COD】【Free Basketball & Pump】Bola 46*30cm Indoor Mini Basketball Hoop Backboard Ring Mini Basket Ball Ring Set For Play Kids Ball Toys Shatterproof Hanging Basketball Court Children Sports Toy Lifetime Basketball Hoop",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/d6825d20934fe13e1d1a09cfd8dc6ddd.jpg",
+            "mktSpend": 82.5,
+            "mktRevenue": 976.14,
+            "mktOrders": 2.0,
+            "mktUnitsSold": 2.0,
+            "mktRoi": 11.83
+        },
+        {
+            "itemId": 3521758798,
+            "brandId": null,
+            "productName": "(Free Gift) Gold Vase Decorations for Living Room Glass Vase with Metal Rack Stand, Vases for Flowers as Wedding Home Office Centerpiece- (Send Grape leaves a strip)",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/349d3aa05e210c3e2a8945b392f31c59.jpg",
+            "mktSpend": 9.29,
+            "mktRevenue": 164.67,
+            "mktOrders": 1.0,
+            "mktUnitsSold": 1.0,
+            "mktRoi": 17.73
+        },
+        {
+            "itemId": 3533240763,
+            "brandId": null,
+            "productName": "12Pcs Thicken Artificial Flowers Wisteria Flower Vine Silk Garland Arch Wedding Home Garden Flower Art DIY Living Room Office Decoration(New thickened upgrade 110cm/45in)",
+            "categoryId": null,
+            "link": "",
+            "image": "https://ph-live.slatic.net/p/7b99cb68d43a4523ad7ae257081d9e0a.jpg",
+            "mktSpend": 475.49,
+            "mktRevenue": 5443.89,
+            "mktOrders": 11.0,
+            "mktUnitsSold": 22.0,
+            "mktRoi": 11.45
+        }
+    ]
+}
+
+//

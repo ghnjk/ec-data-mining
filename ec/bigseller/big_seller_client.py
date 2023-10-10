@@ -14,7 +14,7 @@ from ec.verifycode.ydm_verify import YdmVerify
 
 class BigSellerClient:
 
-    def __init__(self, ydm_token: str):
+    def __init__(self, ydm_token: str, cookies_file_path="cookies/big_seller.cookies"):
         self.check_login_url = "https://www.bigseller.com/api/v1/index.json"
         self.login_web_url = "https://www.bigseller.com/zh_CN/login.htm"
         self.login_url = "https://www.bigseller.com/api/v2/user/login.json"
@@ -22,6 +22,7 @@ class BigSellerClient:
         self.estimate_sku_url = "https://www.bigseller.com/api/v1/items/pageList.json"
         self.session = requests.Session()
         self.auto_verify_coder = YdmVerify(ydm_token)
+        self.cookies_file_path = cookies_file_path
 
     def login(self, email: str, encoded_password: str):
         if self.load_cookies() and self.is_login():
@@ -30,6 +31,8 @@ class BigSellerClient:
         self.__login(email, encoded_password)
 
     def __login(self, email: str, encoded_password: str):
+        # create new session
+        self.session = requests.Session()
         # get login web
         self.session.get(self.login_web_url)
         # get verify code
@@ -53,6 +56,8 @@ class BigSellerClient:
 
     def is_login(self):
         response = self.session.get(self.check_login_url).json()
+        if response["data"]["user"] is None:
+            print(f"login check failed: {json.dumps(response)}")
         return response["data"]["user"] is not None
 
     def get_valid_verify_code(self):
@@ -70,15 +75,13 @@ class BigSellerClient:
         raise Exception("get_valid_verify_code failed.")
 
     def save_cookies(self):
-        cookies_file_path = "./big_seller.cookies"
-        with open(cookies_file_path, "w") as f:
+        with open(self.cookies_file_path, "w") as f:
             f.write(json.dumps(self.session.cookies.get_dict(), indent=2))
 
     def load_cookies(self):
-        cookies_file_path = "./big_seller.cookies"
-        if not os.path.isfile(cookies_file_path):
+        if not os.path.isfile(self.cookies_file_path):
             return False
-        with open(cookies_file_path, "r") as fp:
+        with open(self.cookies_file_path, "r") as fp:
             self.session.cookies.update(json.load(fp))
             return True
 

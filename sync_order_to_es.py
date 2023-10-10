@@ -61,12 +61,13 @@ def sync_sku_orders_to_es(order_date: str):
 
 def main():
     now = time.time()
-    for i in range(3):
+    for i in range(7):
         ti = now - (i + 1) * 24 * 3600
         date = datetime.datetime.fromtimestamp(ti).strftime("%Y-%m-%d")
         print(f"sync {date} ...")
         sync_sku_orders_to_es(date)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__*' \
+               '':
     main()

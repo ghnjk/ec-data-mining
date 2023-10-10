@@ -12,7 +12,7 @@ label: 宠物用品
 matches: feeder|pet|cat toilet|cat|dog
 
 label: 运动用品
-matches: basketball|ball|spot|badminton
+matches: basketball|ball|spot|badminton|table tennis
 
 label: 摩托车配件
 matches: motorcycle|car air freshener
