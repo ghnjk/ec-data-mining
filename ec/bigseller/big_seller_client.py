@@ -20,6 +20,8 @@ class BigSellerClient:
         self.login_url = "https://www.bigseller.com/api/v2/user/login.json"
         self.gen_verify_code_url = "https://www.bigseller.com/api/v2/genVerifyCode.json"
         self.estimate_sku_url = "https://www.bigseller.com/api/v1/items/pageList.json"
+        self.query_sku_info_url = "https://www.bigseller.com/api/v1/inventory/merchant/pageList.json"
+        self.query_all_sku_class_url = "https://www.bigseller.com/api/v1/inventory/merchant/classifyList.json"
         self.session = requests.Session()
         self.auto_verify_coder = YdmVerify(ydm_token)
         self.cookies_file_path = cookies_file_path
@@ -85,6 +87,35 @@ class BigSellerClient:
             self.session.cookies.update(json.load(fp))
             return True
 
+    def load_all_sku(self):
+        """
+        查询所有的sku和匹配关系
+        :return:
+        """
+        rows = []
+        page_size = 300
+        page_no = 1
+        while True:
+            req = {
+                "pageSize": page_size,
+                "pageNo": page_no,
+                "searchType": "skuName",
+                "searchContent": "",
+                "inquireType": 0,
+                "saleStatus": 1
+            }
+            res = self.session.post(self.query_sku_info_url, req).json()
+            total_page = res["data"]["totalPage"]
+            total_size = res["data"]["totalSize"]
+            print(f"load page {page_no}/{total_page} data")
+            rows.extend(res["data"]["rows"])
+            if total_page <= page_no:
+                print(f"load all {total_size} sku")
+                break
+            page_no += 1
+            time.sleep(0.5)
+        return rows
+
     def load_sku_estimate_by_date(self, begin_date: str, end_date: str):
         rows = []
         page_size = 200
@@ -114,3 +145,7 @@ class BigSellerClient:
                 break
             page_no += 1
         return rows
+
+    def load_all_sku_classes(self):
+        res = self.session.post(self.query_all_sku_class_url, {}).json()
+        return res["data"]
