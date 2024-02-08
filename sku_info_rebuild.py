@@ -7,21 +7,21 @@
 """
 from ec.sku_manager import SkuManager
 from ec.sku_group_matcher import BigSellerSkuClassifier
+from sync_sku import load_all_main_sku_ids
 
 
 def main():
     sc = BigSellerSkuClassifier()
     sc.load()
-    sm = SkuManager()
-    sm.load()
-    for sku in sm.sku_map.keys():
-        item = sm.sku_map[sku]
-        if item["isGroup"] == 1:
-            continue
+    main_sm = SkuManager("cookies/main_sku.json")
+    main_sm.load()
+    for sku in load_all_main_sku_ids():
+        item = main_sm.sku_map[sku]
         title = item["title"]
-        count = item["productCount"]
-        cls_name = item["classifyName"]
-        cls_name = sc.get_full_class_name(cls_name)
+        count = 0
+        for vo in item["warehouseVoList"]:
+            count += vo["available"]
+        cls_name = sc.get_full_class_name(item["classify"]["id"])
         image_url = item["imgUrl"]
         print(f"{cls_name}\t{title}\t{sku}\t{count}\t{image_url}")
 

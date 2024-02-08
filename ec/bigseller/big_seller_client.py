@@ -22,6 +22,7 @@ class BigSellerClient:
         self.estimate_sku_url = "https://www.bigseller.com/api/v1/items/pageList.json"
         self.query_sku_info_url = "https://www.bigseller.com/api/v1/inventory/merchant/pageList.json"
         self.query_all_sku_class_url = "https://www.bigseller.com/api/v1/inventory/merchant/classifyList.json"
+        self.query_sku_detail_url = "https://www.bigseller.com/api/v1/inventory/merchant/detail.json"
         self.session = requests.Session()
         self.auto_verify_coder = YdmVerify(ydm_token)
         self.cookies_file_path = cookies_file_path
@@ -149,3 +150,8 @@ class BigSellerClient:
     def load_all_sku_classes(self):
         res = self.session.post(self.query_all_sku_class_url, {}).json()
         return res["data"]
+
+    def query_sku_detail(self, sku_id: int, is_group: int = 0):
+        url = f"{self.query_sku_detail_url}?isGroup={is_group}&skuId={sku_id}"
+        res = self.session.get(url).json()
+        return res["data"]["detail"]

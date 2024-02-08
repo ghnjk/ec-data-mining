@@ -64,9 +64,9 @@ class BigSellerSkuClassifier(object):
         self.class_name_map[item["name"]] = item
         self.class_id_map[item["id"]] = item
 
-    def get_full_class_name(self, cls_name):
+    def get_full_class_name(self, cls_id: int):
         full_name = ""
-        cid = self.class_name_map[cls_name]["id"]
+        cid = cls_id
         while cid > 1:
             item = self.class_id_map[str(cid)]
             if len(full_name) > 0:

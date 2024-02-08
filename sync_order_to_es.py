@@ -49,7 +49,7 @@ def sync_sku_orders_to_es(order_date: str):
     client.login(conf["big_seller_mail"], conf["big_seller_encoded_passwd"])
     sku_matcher = SkuGroupMatcher(app_config.get_config_file("product_label.txt"))
     shop_manager = ShopManager(app_config.get_config_file("shop_info.txt"))
-    es = Elasticsearch(conf["es_hosts"], http_auth=(conf["es_user"], conf["es_passwd"]))
+    es = Elasticsearch(conf["es_hosts"], verify_certs=False, http_auth=(conf["es_user"], conf["es_passwd"]))
 
     # 拉取所有的sku信息
     rows = client.load_sku_estimate_by_date(order_date, order_date)
@@ -61,13 +61,18 @@ def sync_sku_orders_to_es(order_date: str):
 
 def main():
     now = time.time()
-    for i in range(7):
+    for i in range(40):
         ti = now - (i + 1) * 24 * 3600
         date = datetime.datetime.fromtimestamp(ti).strftime("%Y-%m-%d")
         print(f"sync {date} ...")
         sync_sku_orders_to_es(date)
 
 
-if __name__ == '__main__*' \
-               '':
+def disable_urlib_warning():
+    import urllib3
+    urllib3.disable_warnings()
+
+
+if __name__ == '__main__':
+    disable_urlib_warning()
     main()
