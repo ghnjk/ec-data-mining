@@ -1,5 +1,5 @@
-
 ## 查询sku详情
+
 - url: https://www.bigseller.com/api/v1/inventory/merchant/detail.json?isGroup=0&skuId=20844199
 - req:
 
@@ -229,6 +229,7 @@ skuId: 20844199
 ```
 
 ## 批量更新分组
+
 - url: https://www.bigseller.com/api/v1/inventory/merchant/updateClassify.json
 - req:
 
@@ -253,5 +254,53 @@ skuId: 20844199
   "msg": "操作成功",
   "msgObjStr": "",
   "data": true
+}
+```
+
+## 添加库存
+
+- req
+
+```
+https://www.bigseller.com/api/v1/inventory/inout/list/add.json
+{
+  "detailsAddBoList": [
+    {
+      "skuId": 21575327,
+      "stockPrice": 861.86,
+      "shelfList": [
+        {
+          "shelfId": "",
+          "shelfName": "",
+          "stockQty": 1
+        }
+      ]
+    }
+  ],
+  "id": "",
+  "inoutTypeId": "1001", // 1001 普通入库 1004 退货入库
+  "isAutoInoutStock": 1,
+  "note": "test",
+  "warehouseId": 27763,
+  "zoneId": null
+}
+res:
+{
+  "code": 0,
+  "errorType": 0,
+  "msg": "Successfully",
+  "msgObjStr": "",
+  "data": {
+    "data": {
+      "successNum": 1,
+      "failNum": 0,
+      "skipNum": 0,
+      "errorsMap": [],
+      "errors": [],
+      "failMap": {},
+      "error": ""
+    },
+    "defaultMsg": ""
+  }
 }
 ```

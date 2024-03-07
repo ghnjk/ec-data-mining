@@ -91,7 +91,9 @@ class BigSellerClient:
     def load_all_sku(self):
         """
         查询所有的sku和匹配关系
-        :return:
+        :return:[
+
+        ]
         """
         rows = []
         page_size = 300
@@ -115,6 +117,7 @@ class BigSellerClient:
                 break
             page_no += 1
             time.sleep(0.5)
+        self.save_cookies()
         return rows
 
     def load_sku_estimate_by_date(self, begin_date: str, end_date: str):
@@ -145,13 +148,16 @@ class BigSellerClient:
                 print(f"load all {total_size} sku")
                 break
             page_no += 1
+        self.save_cookies()
         return rows
 
     def load_all_sku_classes(self):
         res = self.session.post(self.query_all_sku_class_url, {}).json()
+        self.save_cookies()
         return res["data"]
 
     def query_sku_detail(self, sku_id: int, is_group: int = 0):
         url = f"{self.query_sku_detail_url}?isGroup={is_group}&skuId={sku_id}"
         res = self.session.get(url).json()
+        self.save_cookies()
         return res["data"]["detail"]
